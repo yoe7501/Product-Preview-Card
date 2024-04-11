@@ -1,0 +1,44 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    background-color: var(--White);
+    height: 60vh;
+}
+.image-container,
+.description {
+    flex: 1;
+}
+.image-container{
+    background-image: url('image-product-desktop.jpg');
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    .image-container{
+        background-image: url('image-product-mobile.jpg');
+        background-size: cover;
+        }
+    .card{
+        flex-direction: column;
+    }
+}
