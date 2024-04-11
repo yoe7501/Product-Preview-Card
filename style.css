@@ -38,6 +38,9 @@ body {
 h1 {
     font-family: 'Fraunces', sans-serif;
 }
+p {
+    font-weight: 300;
+}
 .product {
     font-size: 36px;
 }
